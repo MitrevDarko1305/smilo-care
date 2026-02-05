@@ -1,26 +1,99 @@
 @import "tailwindcss";
 
+/* =========================
+   Light mode (default)
+   ========================= */
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  /* Brand */
+  --primary: #2BB0A8;
+  --primary-hover: #239C95;
+  --primary-light: #E6F6F5;
+
+  --accent: #6EC6E2;
+  --accent-light: #EAF7FC;
+
+  /* Layout */
+  --background: #F9FAFB;   /* page background */
+  --surface: #FFFFFF;      /* cards, panels */
+  --muted: #F1F5F9;        /* subtle sections */
+  --border: #E5E7EB;
+
+  /* Text */
+  --foreground: #1F2933;   /* main text */
+  --text-muted: #6B7280;
 }
 
 @theme inline {
+  --color-primary: var(--primary);
+   --color-primary-light: var(--primary-light);
+  --color-primary-hover: var(--primary-hover);
+  --color-accent: var(--accent);
+  --color-accent-light: var(--accent-light);
+}
+
+/* =========================
+   Dark mode overrides
+   ========================= 
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0F172A;
+    --surface: #111827;
+    --muted: #0B1220;
+    --border: #1F2937;
+
+    --foreground: #F9FAFB;
+    --text-muted: #CBD5E1;
+  }
+}
+  */
+
+/* =========================
+   Tailwind theme bridge
+   ========================= */
+@theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
+
+  --color-primary: var(--primary);
+  --color-accent: var(--accent);
+  --color-surface: var(--surface);
+  --color-muted: var(--muted);
+  --color-border: var(--border);
+
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
-}
-
+/* =========================
+   Base skeleton look
+   ========================= */
 body {
   background: var(--background);
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
 }
+
+/* Reveal animation on scroll */
+/* Reveal on scroll – base */
+.reveal {
+  opacity: 0;
+  transform: translateY(24px);
+  transition:
+    opacity 500ms ease,
+    transform 500ms ease;
+  will-change: opacity, transform;
+}
+
+/* Active state */
+.reveal--active {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .reveal {
+    transition: none;
+    transform: none;
+  }
+}
+
