@@ -6,16 +6,47 @@ import { HeroFullBackground } from "./HeroSection/HeroComponent";
 import Navbar from "./Navbar/Navbar";
 import ProcessSteps from "./ProcessSection/Process";
 import ServiceBasic from "./ServiceSection/ServiceBasic";
+import ServicesGrid from "./ServiceSection/ServiceBasic";
 import WhyTrustUs from "./WhyUsSection/WhyTrustUs";
+import { Stethoscope, Smile, AlignCenter } from "lucide-react";
 
+
+const landingServices = [
+  {
+    title: "General Dentistry",
+    description: "Routine check-ups, cleanings, and preventive care.",
+    href: "/services/general",
+    icon: Stethoscope,
+  },
+  {
+    title: "Cosmetic Dentistry",
+    description: "Enhancing your smile with natural-looking treatments.",
+    href: "/services/cosmetic",
+    icon: Smile,
+  },
+  {
+    title: "Orthodontics",
+    description: "Aligning teeth and improving bite for all ages.",
+    href: "/services/orthodontics",
+    icon: AlignCenter,
+  },
+];
 
 export default function Page() {
   return (
     <>
       <main className="p-0 text-gray-600">
         <Navbar/>
-        <HeroFullBackground/>
-        <ServiceBasic/>
+        <HeroFullBackground
+        backgroundImage="Smilo-Care-Hero3.webp"
+        kicker="trusted dental clinic"
+        titleBefore="Smilo-Care —"
+        highlight="Beautiful"
+        titleAfter="Smiles"
+        description="Smilo-Care helps dental clinics manage appointments, patients, and daily operations in one reliable system."
+        primaryButton={{ label: "Book Appointment", href: "/book" }}
+        secondaryButton={{ label: "See how it works", href: "/how-it-works" }}/>
+        <ServiceBasic />
         <ProcessSteps/>
         <WhyTrustUs/>
         <FaqImage/>

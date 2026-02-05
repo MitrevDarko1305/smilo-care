@@ -1,56 +1,114 @@
 "use client";
 
-export function HeroFullBackground() {
+type HeroButton = {
+  label: string;
+  href?: string; // use if you navigate
+  onClick?: () => void; // use if you trigger modal/scroll
+  variant?: "primary" | "secondary";
+};
+
+type HeroFullBackgroundProps = {
+  backgroundImage: string;
+  kicker?: string;
+  titleBefore: string;
+  highlight?: string; // optional highlighted word/phrase
+  titleAfter:string;
+  description?: string;
+  primaryButton?: HeroButton;
+  secondaryButton?: HeroButton;
+};
+
+export function HeroFullBackground({
+  backgroundImage,
+  kicker = "trusted dental clinic",
+  titleBefore,
+  highlight = "Great Smiles",
+  titleAfter,
+  description,
+  primaryButton,
+  secondaryButton,
+}: HeroFullBackgroundProps) {
+  const renderButton = (btn?: HeroButton) => {
+    if (!btn) return null;
+
+    const base =
+      "rounded-md p-[12px] cursor-pointer transition-colors text-sm font-medium";
+    const primary =
+      "bg-primary hover:bg-foreground text-white";
+    const secondary =
+      "text-white/60 hover:text-white";
+
+    const className =
+      `${base} ${btn.variant === "secondary" ? secondary : primary}`;
+
+    // Link button
+    if (btn.href) {
+      return (
+        <a href={btn.href} className={className}>
+          {btn.label}
+        </a>
+      );
+    }
+
+    // Action button
+    return (
+      <button onClick={btn.onClick} className={className}>
+        {btn.label}
+      </button>
+    );
+  };
+
   return (
     <section className="relative h-screen">
       <div
-        className="h-full bg-cover bg-center bg-no-repeat flex items-center  text-white pl-[137px]"
-        style={{
-          backgroundImage: "url('Smilo-Care-hero3.webp')",
-        }}
+        className="h-full bg-cover bg-center bg-no-repeat flex items-center text-white pl-[137px]"
+        style={{ backgroundImage: `url('${backgroundImage}')` }}
       >
         <div className="absolute inset-0 bg-black/60 z-10" />
 
         <div className="flex z-20 flex-col">
-          <div className="text-sm text-white/40 tracking-wide">
-            trusted dental clinic
-          </div>
+          {kicker && (
+            <div className="text-sm text-white/40 tracking-wide">
+              {kicker}
+            </div>
+          )}
 
           <div className="text-[45px] font-medium mb-4 text-white">
-            Smilo-Care — <span className="text-primary">Beautiful</span> Smiles
-          </div>
+          {titleBefore}
+        {highlight && (
+          <span className="text-primary"> {highlight} </span>
+        )}
+        {titleAfter}
+        </div>
 
-          <p className="w-[397px] mb-[40px] text-sm text-white">
-            Smilo-Care helps dental clinics manage appointments, patients,
-            and daily operations in one reliable system.
-          </p>
+
+          {description && (
+            <p className="w-[397px] mb-[40px] text-sm text-white">
+              {description}
+            </p>
+          )}
 
           <div className="flex gap-[16px]">
-            <button className="rounded-md p-[12px] cursor-pointer bg-primary hover:bg-foreground transition-colors text-white text-sm font-medium">
-              Book Appointment
-            </button>
-
-            <button className="rounded-md p-[12px] cursor-pointer text-white/60 hover:text-white text-sm font-medium">
-              See how it works
-            </button>
+            {renderButton(
+              primaryButton
+                ? { ...primaryButton, variant: "primary" }
+                : undefined
+            )}
+            {renderButton(
+              secondaryButton
+                ? { ...secondaryButton, variant: "secondary" }
+                : undefined
+            )}
           </div>
         </div>
       </div>
 
       {/* KEEP THIS — Navbar relies on it */}
-      <div
-        id="hero-sentinel"
-        className="absolute bottom-0 left-0 h-px w-full"
-      />
+      <div id="hero-sentinel" className="absolute bottom-0 left-0 h-px w-full" />
     </section>
   );
 }
 
 
-
-{/*
-  text-[15px] px-[20px] py-[20px] bg-white flex justify-between items-center tracking-wide 
-  
-   {/* Navbar */}
    
     
