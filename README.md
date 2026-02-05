@@ -1,7 +1,7 @@
 # Smilo-care 
 
 ## Modern website system with multiple pages and CMS driven content / blocks,
-🔗 Smilo-care.mitrevdarko.dev
+🔗 https://smilo-care.mitrevdarko.dev
 
 ---
 
