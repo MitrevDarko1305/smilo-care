@@ -1,6 +1,7 @@
 "use client";
 
 import React, { useMemo, useState } from "react";
+import RevealOnScroll from "../Animations/RevealOnScroll";
 
 export type FaqItem = {
   id?: string;
@@ -70,21 +71,26 @@ export default function FaqTwoCols({
     <section className={className}>
       <div className="w-full max-w-6xl">
         {showHeader && (
+          <RevealOnScroll>
           <div className="mb-10">
             {(titleBefore || titleHighlight || titleAfter) && (
+              <RevealOnScroll>
               <h2 className="text-[45px] font-medium text-foreground text-center md:text-start mb-4">
                 {titleBefore}{" "}
                 <span  className={highlightClassName}>{titleHighlight}</span>{" "}
                 {titleAfter}
               </h2>
+              </RevealOnScroll>
             )}
-
+            <RevealOnScroll>
             {description && (
               <p className="text-foreground/50 text-sm text-center md:text-start mx-auto md:mx-0">
                 {description}
               </p>
             )}
+            </RevealOnScroll>
           </div>
+          </RevealOnScroll>
         )}
 
         <div className=" w-full  md:w-1/2 mx-auto md:mx-0">
@@ -107,10 +113,12 @@ export default function FaqTwoCols({
                 aria-expanded={open}
               >
                 <div className="flex items-center justify-between gap-4">
+                  <RevealOnScroll>
                   <span className="text-sm font-semibold text-foreground">
                     {faq.question}
                   </span>
-
+                  </RevealOnScroll>
+                  <RevealOnScroll>
                   <div
                     className={[
                       "text-primary p-1 rounded transition-colors",
@@ -119,6 +127,7 @@ export default function FaqTwoCols({
                     aria-hidden="true"
                   >
                     {open ? (
+                      <RevealOnScroll>
                       <svg
                         xmlns="http://www.w3.org/2000/svg"
                         width="20"
@@ -132,6 +141,7 @@ export default function FaqTwoCols({
                       >
                         <path d="M5 12h14" />
                       </svg>
+                      </RevealOnScroll>
                     ) : (
                       <svg
                         xmlns="http://www.w3.org/2000/svg"
@@ -149,6 +159,7 @@ export default function FaqTwoCols({
                       </svg>
                     )}
                   </div>
+                  </RevealOnScroll>
                 </div>
 
                 <div
@@ -157,11 +168,15 @@ export default function FaqTwoCols({
                     open ? "grid-rows-[1fr] opacity-100" : "grid-rows-[0fr] opacity-0",
                   ].join(" ")}
                 >
+                 
                   <div className="overflow-hidden">
+                    <RevealOnScroll>
                     <div className="text-sm text-foreground/50 leading-relaxed mt-4">
                       {faq.answer}
                     </div>
+                    </RevealOnScroll>
                   </div>
+                 
                 </div>
               </button>
             );

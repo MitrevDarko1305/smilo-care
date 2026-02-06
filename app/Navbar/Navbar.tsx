@@ -38,7 +38,6 @@ export default function Navbar() {
         <ul className="flex items-center gap-[45px]">
           <li className={navLink}><Link href="/">Home</Link></li>
           <li className={navLink}><Link href="/services">Services</Link></li>
-          <li className={navLink}><Link href="/how-it-works">How it works</Link></li>
           <li className={navLink}><Link href="/about">Why Trust Us</Link></li>
           <li className={navLink}><Link href="/faq">FAQ</Link></li>
           <li className={navLink}><Link href="/appointment">Appointment</Link></li>
