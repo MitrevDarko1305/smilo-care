@@ -355,6 +355,10 @@ export default function WhyTrustUs() {
           </div>
           
         </div>
+
+        <div className="mx-auto flex justify-center mt-12">
+          <a href="/about" className="flex-inline text-sm text-foreground/50 hover:underline hover:text-primary  transition "> Learn more about Smilo - Care → </a>
+          </div>
        
       </div>
       </RevealOnScroll>

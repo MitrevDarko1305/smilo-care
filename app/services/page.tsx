@@ -6,6 +6,7 @@ import Footer from "../Footer/FooterBasic";
 import { HeroFullBackground } from "../HeroSection/HeroComponent";
 import Navbar from "../Navbar/Navbar";
 import ServicesGrid6 from "../ServiceSection/ReusableServiceSection";
+import SmoothScroll from "../Animations/LenisSmoothAnimation";
 
 
 const services = [
@@ -62,8 +63,8 @@ const services = [
 export default function Page() {
   return (
     <>
-      <main className="p-0 text-gray-600">
-        <Navbar/>
+         <main className="p-0 text-gray-600">
+         <Navbar/>
         <HeroFullBackground 
         backgroundImage="Smilo-CTA3.jpg"
         kicker="trusted dental clinic"
@@ -83,7 +84,7 @@ export default function Page() {
          <FaqImage/>
         <PartnerCTA/>
         <Footer/>
-      </main>
+        </main>
     </>
   );
 }

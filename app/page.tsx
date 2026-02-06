@@ -1,3 +1,4 @@
+import AboutSection from "./AboutUsSection/AboutUsBasic";
 import ColumnPosts from "./BlogSection/PremiumBlog";
 import PartnerCTA from "./CTASection/CTA";
 import FaqImage from "./FAQ/FAQImage";
@@ -38,7 +39,7 @@ export default function Page() {
       <main className="p-0 text-gray-600">
         <Navbar/>
         <HeroFullBackground
-        backgroundImage="Smilo-Care-Hero3.webp"
+        backgroundImage="Smilo-Care-hero3.webp"
         kicker="trusted dental clinic"
         titleBefore="Smilo-Care —"
         highlight="Beautiful"
