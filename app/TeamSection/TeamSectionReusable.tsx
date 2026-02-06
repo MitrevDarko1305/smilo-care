@@ -1,4 +1,5 @@
 import React from "react";
+import RevealOnScroll from "../Animations/RevealOnScroll";
 
 export type Socials = {
   facebook?: string;
@@ -76,13 +77,15 @@ function TeamMemberCard({
 
   return (
     <div className={`overflow-hidden rounded-2xl border border-black/5 ${cardClassName}`}>
+      <RevealOnScroll>
       <img
         className={`w-full h-95 ${imageClassName} object-center object-top `}
         src={imageUrl}
         alt={`${name} — ${role}`}
         loading="lazy"
       />
-
+      </RevealOnScroll>
+      <RevealOnScroll>
       <div className="p-5 text-center">
         {profileUrl ? (
           <a
@@ -119,6 +122,7 @@ function TeamMemberCard({
           </div>
         )}
       </div>
+      </RevealOnScroll>
     </div>
   );
 }
@@ -188,25 +192,34 @@ export default function TeamSection({
 
   return (
     <section className={`${sectionClassName}`}>
+
+      <RevealOnScroll>
       <div className={`py-12 mx-auto px-4 ${containerClassName}`}>
+
+        <RevealOnScroll>
         <div className="text-center mb-12">
           {subtitle && (
-            <p className="text-sm  text-foreground/50">{subtitle}</p>
+           <RevealOnScroll><p className="text-sm  text-foreground/50">{subtitle}</p> </RevealOnScroll> 
           )}
 
+          <RevealOnScroll>
           <h2 className={`mt-3 text-[45px] sm:text-4xl font-medium ${headerClassName}`}>
             {title}{" "}
             <span className={highlightClassName}>
               {highlight}
             </span>
           </h2>
+          </RevealOnScroll>
 
           {description && (
+            <RevealOnScroll>
             <p className="mt-4 max-w-2xl mx-auto text-sm sm:text-foreground/50">
               {description}
             </p>
+            </RevealOnScroll>
           )}
         </div>
+        </RevealOnScroll>
 
         <div className={`grid grid-cols-1 ${gridCols} gap-8`}>
           {members.map((m) => (
@@ -220,6 +233,7 @@ export default function TeamSection({
           ))}
         </div>
       </div>
+      </RevealOnScroll>
     </section>
   );
 }
