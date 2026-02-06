@@ -1,6 +1,6 @@
 import AboutSection from "../AboutUsSection/AboutUsBasic";
 import PartnerCTA from "../CTASection/CTA";
-import FaqImage from "../FAQ/FAQImage";
+import FaqImage from "../FrequentlyAskedQuestionsSection/FAQImage";
 import Footer from "../Footer/FooterBasic";
 import { HeroFullBackground } from "../HeroSection/HeroComponent";
 import Navbar from "../Navbar/Navbar";
