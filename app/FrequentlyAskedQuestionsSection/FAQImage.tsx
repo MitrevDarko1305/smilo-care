@@ -63,7 +63,7 @@ export default function FaqImage() {
                 <RevealOnScroll>
                 <div className="flex items-center justify-between">
                   <RevealOnScroll>
-                  <h3 className="text-foreground font-medium">{faq.question}</h3>
+                  <h3 className="text-foreground/50 font-medium">{faq.question}</h3>
                   </RevealOnScroll>
                   <svg
                     width="18"
@@ -88,7 +88,7 @@ export default function FaqImage() {
                     </RevealOnScroll>
                 <p
                   className={[
-                    "text-sm text-slate-500 transition-all duration-500 ease-in-out max-w-md",
+                    "text-sm text-foreground transition-all duration-500 ease-in-out max-w-md",
                     isOpen
                       ? "opacity-100 max-h-[300px] translate-y-0 pt-4"
                       : "opacity-0 max-h-0 -translate-y-2 pt-0",

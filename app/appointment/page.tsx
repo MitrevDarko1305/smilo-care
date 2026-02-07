@@ -1,9 +1,15 @@
-    import { Main } from "next/document";
+  "use client"
+  
+  import { Main } from "next/document";
 import { RequestFormLayout } from "../ApointmentSection/ApointmentReusableForm";
 import Navbar from "../Navbar/Navbar";
 import FaqImage from "../FrequentlyAskedQuestionsSection/FAQImage";
 import PartnerCTA from "../CTASection/CTA";
 import Footer from "../Footer/FooterBasic";
+import RotatingCube from "../CubeAnimation/CubeAnimating";
+import RotatingCubeExpanded from "../CubeAnimation/ThreeAnimatingCubesRotating";
+import MaintenanceOnly from "../CubeAnimation/SetupMaintenance";
+import { CubeCamera } from "@react-three/drei";
 
 export function AppointmentRequestForm() {
   return (
@@ -35,7 +41,6 @@ export default function Page() {
         <FaqImage/>
         <PartnerCTA/>
         <Footer/>
-
       </main>
     </>
   );

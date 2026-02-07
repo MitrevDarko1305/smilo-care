@@ -1,6 +1,6 @@
 
 import ColumnPosts from "./BlogSection/PremiumBlog";
-import PartnerCTA from "./CTASection/CTA";
+
 import FaqImage from "./FrequentlyAskedQuestionsSection/FAQImage";
 import Footer from "./Footer/FooterBasic";
 import { HeroFullBackground } from "./HeroSection/HeroComponent";
@@ -9,6 +9,16 @@ import ProcessSteps from "./ProcessSection/Process";
 import ServiceBasic from "./ServiceSection/ServiceBasic";
 import WhyTrustUs from "./WhyUsSection/WhyTrustUs";
 import { Stethoscope, Smile, AlignCenter } from "lucide-react";
+import PartnerCTA from "./CTASection/CTA";
+
+
+
+
+
+
+
+
+
 
 
 const landingServices = [

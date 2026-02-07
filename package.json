@@ -9,11 +9,16 @@
     "lint": "eslint"
   },
   "dependencies": {
+    "@darko/ui-kit": "file:../ui-kit",
+    "@react-three/drei": "^10.7.7",
+    "@react-three/fiber": "^9.5.0",
     "lenis": "^1.3.17",
     "lucide-react": "^0.563.0",
     "next": "16.1.6",
     "react": "19.2.3",
-    "react-dom": "19.2.3"
+    "react-dom": "19.2.3",
+    "three": "^0.182.0",
+    "ui-kit": "file:../ui-kit"
   },
   "devDependencies": {
     "@tailwindcss/postcss": "^4",

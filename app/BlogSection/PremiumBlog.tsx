@@ -28,7 +28,7 @@ const DEFAULT_POSTS: Post[] = [
     title: " Treatment options",
     excerpt:
       "Clear explanations of available treatments, who they’re suited for, and how to choose the option that best fits your needs.",
-    href: "#!",
+    href: "/blog/treatment-options",
     coverImageUrl:
       "/Smilo-Blog1.jpg",
     coverImageAlt: "",
@@ -46,7 +46,7 @@ const DEFAULT_POSTS: Post[] = [
     title: " The treatment journey",
     excerpt:
       "A step-by-step overview of your visit, including preparation, the procedure itself, and how we focus  comfort throughout.",
-    href: "#!",
+    href: "/blog/thejourney",
     coverImageUrl:
       "/Smilo-Blog2.jpg",
     coverImageAlt: "",
@@ -64,7 +64,7 @@ const DEFAULT_POSTS: Post[] = [
     title: "Recovery, results, and care",
     excerpt:
       "What happens after treatment, expected recovery timelines, and how we support long-term results with proper aftercare.",
-    href: "#!",
+    href: "/blog/recovery-care",
     coverImageUrl:
       "/Smilo-Blog3.png",
     coverImageAlt: "",
