@@ -78,7 +78,7 @@ export default function WhyTrustUs() {
                     </h3>
                     </RevealOnScroll>
                     <RevealOnScroll>
-                    <p className="mt-2 text-sm text-neutral-600 dark:text-neutral-300">
+                    <p className="mt-2 text-sm text-white/40">
                       We follow strict, repeatable processes so quality stays high
                       — whether it’s one booking or a hundred.
                     </p>
@@ -117,12 +117,12 @@ export default function WhyTrustUs() {
                   </div>
                   <div>
                     <RevealOnScroll>
-                    <h3 className="text-base font-semibold text-neutral-950 dark:text-neutral-50">
+                    <h3 className="text-white font-semibold">
                       Transparent communication
                     </h3>
                     </RevealOnScroll>
                     <RevealOnScroll>
-                    <p className="mt-2 text-sm text-neutral-600 dark:text-neutral-300">
+                    <p className="mt-2 text-sm text-white/40">
                       You’ll always know what’s happening, what it costs, and what
                       comes next — no surprises.
                     </p>
@@ -167,12 +167,12 @@ export default function WhyTrustUs() {
 
                   <div>
                     <RevealOnScroll>
-                    <h3 className="text-base font-semibold text-neutral-950 dark:text-neutral-50">
+                    <h3 className="text-white font-semibold">
                       Skilled team
                     </h3>
                     </RevealOnScroll>
                     <RevealOnScroll>
-                    <p className="mt-2 text-sm text-neutral-600 dark:text-neutral-300">
+                    <p className="mt-2 text-sm text-white/40">
                       Experienced people, modern tools, and a culture of
                       accountability from the first call to delivery.
                     </p>
@@ -210,12 +210,12 @@ export default function WhyTrustUs() {
 
                   <div>
                     <RevealOnScroll>
-                    <h3 className="text-base font-semibold text-neutral-950 dark:text-neutral-50">
+                    <h3 className="text-white font-semibold">
                       Reliable delivery
                     </h3>
                     </RevealOnScroll>
                     <RevealOnScroll>
-                    <p className="mt-2 text-sm text-neutral-600 dark:text-neutral-300">
+                    <p className="mt-2 text-sm text-white/40">
                       We show up on time, keep things moving, and follow through
                       — because consistency matters.
                     </p>
@@ -277,12 +277,12 @@ export default function WhyTrustUs() {
               <div className="mt-6 grid gap-4 sm:grid-cols-3">
                 <div className="rounded-2xl border  bg-neutral-900/40 p-4 border-neutral-800">
                   <RevealOnScroll>
-                  <p className="text-xs text-neutral-600 dark:text-neutral-300">
+                  <p className="text-xs text-white">
                     Experience
                   </p>
                   </RevealOnScroll>
                   <RevealOnScroll>
-                  <p className="mt-1 text-lg font-semibold text-neutral-950 dark:text-neutral-50">
+                  <p className="mt-1 text-lg font-semibold text-white/40">
                     10+ yrs
                   </p>
                   </RevealOnScroll>
@@ -290,12 +290,12 @@ export default function WhyTrustUs() {
 
                 <div className="rounded-2xl border  bg-neutral-900/40 p-4 border-neutral-800">
                   <RevealOnScroll>
-                  <p className="text-xs text-neutral-600 dark:text-neutral-300">
+                  <p className="text-xs text-white">
                     Coverage
                   </p>
                   </RevealOnScroll>
                   <RevealOnScroll>
-                  <p className="mt-1 text-lg font-semibold text-neutral-950 dark:text-neutral-50">
+                  <p className="mt-1 text-lg font-semibold text-white/40">
                     Local + B2B
                   </p>
                   </RevealOnScroll>
@@ -303,12 +303,12 @@ export default function WhyTrustUs() {
 
                 <div className="rounded-2xl border  bg-neutral-900/40 p-4 border-neutral-800">
                   <RevealOnScroll>
-                  <p className="text-xs text-neutral-600 dark:text-neutral-300">
+                  <p className="text-xs text-white">
                     Support
                   </p>
                   </RevealOnScroll>
                   <RevealOnScroll>
-                  <p className="mt-1 text-lg font-semibold text-neutral-950 dark:text-neutral-50">
+                  <p className="mt-1 text-lg font-semibold text-white/40">
                     Ongoing
                   </p>
                   </RevealOnScroll>

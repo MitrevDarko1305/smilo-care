@@ -37,19 +37,19 @@ export default function ProcessSteps() {
             <RevealOnScroll>
             <div className="flex items-start gap-4">
               <RevealOnScroll>
-              <div className="flex h-10 w-10 items-center justify-center rounded-xl border  bg-primary text-sm text-white font-medium dark:border-primary">
+              <div className="flex h-10 w-10 items-center justify-center rounded-xl border  bg-primary text-sm text-white font-medium border-primary">
                 01
               </div>
               </RevealOnScroll>
               <RevealOnScroll>
               <div>
                 <RevealOnScroll>
-                <h3 className="text-base font-semibold text-neutral-950 dark:text-neutral-50">
+                <h3 className="text-white font-semibold ">
                   Get in touch
                 </h3>
                 </RevealOnScroll>
                 <RevealOnScroll>
-                <p className="mt-2 text-sm text-neutral-600 dark:text-neutral-300">
+                <p className="mt-2 text-sm text-white/40">
                   Reach out and tell us what medical threatment you looking for.
                 </p>
                 </RevealOnScroll>
@@ -67,7 +67,7 @@ export default function ProcessSteps() {
             <div className="flex items-start gap-4">
 
               <RevealOnScroll>
-              <div className="flex h-10 w-10 items-center justify-center rounded-xl border border-primary bg-primary text-sm text-white font-medium  dark:bg-primary">
+              <div className="flex h-10 w-10 items-center justify-center rounded-xl border border-primary bg-primary text-sm text-white font-medium">
                 02
               </div>
               </RevealOnScroll>
@@ -75,12 +75,12 @@ export default function ProcessSteps() {
               <div>
 
                 <RevealOnScroll>
-                <h3 className="text-base font-semibold text-neutral-950 dark:text-neutral-50">
+                <h3 className="text-white font-semibold">
                   We prepare a plan
                 </h3>
                 </RevealOnScroll>
                 <RevealOnScroll>
-                <p className="mt-2 text-sm text-neutral-600 dark:text-neutral-300">
+                <p className="mt-2 text-sm text-white/40">
                   We define the best approach based on your needs.
                 </p>
                 </RevealOnScroll>
@@ -93,7 +93,7 @@ export default function ProcessSteps() {
 
           {/* Step 3 */}
           <RevealOnScroll>
-          <div className="rounded-2xl p-6 border border-foreground p-6  dark:bg-foreground">
+          <div className="rounded-2xl p-6 border border-foreground p-6  bg-foreground">
             <RevealOnScroll>
             <div className="flex items-start gap-4">
               <RevealOnScroll>
@@ -104,12 +104,12 @@ export default function ProcessSteps() {
               <RevealOnScroll>
               <div>
                 <RevealOnScroll>
-                <h3 className="text-base font-semibold text-neutral-950 dark:text-neutral-50">
+                <h3 className="text-white font-semibold ">
                   We deliver
                 </h3>
                 </RevealOnScroll>
                 <RevealOnScroll>
-                <p className="mt-2 text-sm text-neutral-600 dark:text-neutral-300">
+                <p className="mt-2 text-sm text-white/40">
                   Execution, follow-up, and ongoing support if needed.
                 </p>
                 </RevealOnScroll>
