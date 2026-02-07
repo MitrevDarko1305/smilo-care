@@ -31,7 +31,7 @@ const PartnerCTA: React.FC<PartnerCTAProps> = ({
   imageAlt = "Dental-Clinic-Screenshot",
 }) => {
   return (
-   <section className="relative overflow-hidden bg-foreground py-24 sm:py-24">
+   <section className="relative overflow-hidden bg-foreground py-8 sm:py-24">
   {/* Background glow */}
   <div
     aria-hidden="true"
@@ -45,7 +45,7 @@ const PartnerCTA: React.FC<PartnerCTAProps> = ({
       <RevealOnScroll>
       <div className="max-w-md lg:flex-auto py-16 lg:py-12 text-center lg:text-left lg:-translate-y-12">
         <RevealOnScroll>
-        <h2 className="tracking-normal text-white text-[45px] font-medium mb-4  sm:text-4xl">
+        <h2 className="tracking-tight leading-tight text-white text-[45px] font-medium mb-4  sm:text-4xl">
           {title}
         </h2>
         </RevealOnScroll>
@@ -77,7 +77,7 @@ const PartnerCTA: React.FC<PartnerCTAProps> = ({
       </RevealOnScroll>
 
       {/* Image */}
-      <div className="relative mt-16 lg:mt-0 lg:flex-1 h-80 lg:h-auto lg:-translate-y-[9.5rem]">
+      <div className="relative mt-16  lg:mt-0 lg:flex-1 h-80 lg:h-auto lg:-translate-y-[9.5rem] translate-x-[-14rem] translate-y-[-2rem  md:translate-x-0 md:translate-y-0] ">
        <RevealOnScroll>
         <img
           src={imageSrc}

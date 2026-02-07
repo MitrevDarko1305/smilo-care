@@ -33,7 +33,7 @@ export default function ProcessSteps() {
         <div className="mt-14 grid gap-6 lg:grid-cols-3">
           {/* Step 1 */}
           <RevealOnScroll>
-          <div className="rounded-2xl border border-foreground p-6  dark:bg-foreground">
+          <div className="rounded-2xl border border-foreground p-6  bg-foreground">
             <RevealOnScroll>
             <div className="flex items-start gap-4">
               <RevealOnScroll>

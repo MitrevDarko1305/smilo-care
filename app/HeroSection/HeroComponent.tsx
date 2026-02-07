@@ -61,7 +61,7 @@ export function HeroFullBackground({
   return (
     <section className="relative h-screen">
       <div
-        className="h-full bg-cover bg-center bg-no-repeat flex items-center text-white pl-[137px]"
+        className="h-full bg-cover bg-center bg-no-repeat flex items-center text-white pr-[5%] md:pr-[5%] md:pl-[5%] pl-[5%]"
         style={{ backgroundImage: `url('${backgroundImage}')` }}
       >
         <div className="absolute inset-0 bg-black/60 z-10" />
@@ -83,7 +83,7 @@ export function HeroFullBackground({
 
 
           {description && (
-            <p className="w-[397px] mb-[40px] text-sm text-white">
+            <p className=" w-full md:max-w-[397px] mb-[40px] text-sm text-white">
               {description}
             </p>
           )}

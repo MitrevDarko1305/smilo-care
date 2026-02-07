@@ -106,8 +106,8 @@ export default function ServiceBasic() {
   ] as const;
 
   return (
-    <section className="bg-foreground py-24 sm:py-22">
-      <div className="mx-auto max-w-7xl px-6 lg:px-8">
+    <section className="bg-foreground py-16 sm:py-24">
+      <div className="mx-auto max-w-7xl px-6 lg:px-8 sm:text-start text-center">
         <RevealOnScroll>
           <div className="mx-auto max-w-2xl lg:mx-0">
             <RevealOnScroll>
@@ -124,18 +124,18 @@ export default function ServiceBasic() {
           </div>
         </RevealOnScroll>
 
-        <div className="mx-auto mt-16 max-w-2xl sm:mt-16 lg:mx-0 lg:max-w-none">
+        <div className="mx-auto mt-16 max-w-2xl  sm:mt-16 lg:mx-0 lg:max-w-none">
           <RevealOnScroll>
-            <dl className="grid grid-cols-1 gap-x-8 gap-y-12 lg:grid-cols-3">
+            <dl className="grid grid-cols-1 gap-x-8  gap-y-12 lg:grid-cols-3">
               {features.map((f) => {
                 const Icon = f.icon;
 
                 return (
                   <RevealOnScroll key={f.title}>
-                    <div className="flex flex-col">
+                    <div className="flex flex-col items-center sm:items-start">
                       <RevealOnScroll>
                         <dt className="text-xl font-medium text-white">
-                          <div className="mb-6 flex h-11 w-11 items-center justify-center rounded-lg bg-transparent shadow-sm">
+                          <div className="mb-6 flex h-11 w-11 items-center mx-auto sm:mx-0 justify-center rounded-lg bg-transparent shadow-sm">
                             <Icon className="h-6 w-6 text-white" />
                           </div>
                           {f.title}

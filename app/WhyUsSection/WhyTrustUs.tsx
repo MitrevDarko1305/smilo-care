@@ -73,7 +73,7 @@ export default function WhyTrustUs() {
                 
                   <div>
                    <RevealOnScroll>
-                    <h3 className="text-base font-semibold text-neutral-950 dark:text-neutral-50">
+                    <h3 className="text-white font-semibold">
                       Verified standards
                     </h3>
                     </RevealOnScroll>
@@ -243,7 +243,7 @@ export default function WhyTrustUs() {
                   </p>
                   </RevealOnScroll>
                   <RevealOnScroll>
-                  <p className="mt-1 text-2xl font-semibold tracking-tight text-neutral-950 dark:text-neutral-50">
+                  <p className="mt-1 text-2xl font-semibold tracking-tight text-white">
                     Within <span className="text-primary">24</span> hours
                   </p>
                   </RevealOnScroll>
@@ -275,7 +275,7 @@ export default function WhyTrustUs() {
               </RevealOnScroll>
 
               <div className="mt-6 grid gap-4 sm:grid-cols-3">
-                <div className="rounded-2xl border border-neutral-200 bg-neutral-50 p-4 dark:border-neutral-800 dark:bg-neutral-900/40">
+                <div className="rounded-2xl border  bg-neutral-900/40 p-4 border-neutral-800">
                   <RevealOnScroll>
                   <p className="text-xs text-neutral-600 dark:text-neutral-300">
                     Experience
@@ -288,7 +288,7 @@ export default function WhyTrustUs() {
                   </RevealOnScroll>
                 </div>
 
-                <div className="rounded-2xl border border-neutral-200 bg-neutral-50 p-4 dark:border-neutral-800 dark:bg-neutral-900/40">
+                <div className="rounded-2xl border  bg-neutral-900/40 p-4 border-neutral-800">
                   <RevealOnScroll>
                   <p className="text-xs text-neutral-600 dark:text-neutral-300">
                     Coverage
@@ -301,7 +301,7 @@ export default function WhyTrustUs() {
                   </RevealOnScroll>
                 </div>
 
-                <div className="rounded-2xl border border-neutral-200 bg-neutral-50 p-4 dark:border-neutral-800 dark:bg-neutral-900/40">
+                <div className="rounded-2xl border  bg-neutral-900/40 p-4 border-neutral-800">
                   <RevealOnScroll>
                   <p className="text-xs text-neutral-600 dark:text-neutral-300">
                     Support
@@ -315,7 +315,7 @@ export default function WhyTrustUs() {
                 </div>
               </div>
 
-              <div className="mt-6 rounded-2xl border border-neutral-200 bg-neutral-50 p-5 dark:border-neutral-800 dark:bg-neutral-900/40">
+              <div className="rounded-2xl border  bg-neutral-900/40 p-4 border-neutral-800 mt-6">
                 <RevealOnScroll>
                 <p className="text-sm font-medium text-primary">
                   Ready to get started?

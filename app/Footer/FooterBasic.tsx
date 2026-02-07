@@ -6,7 +6,7 @@ import RevealOnScroll from "../Animations/RevealOnScroll";
 
 export default function Footer() {
   return (
-    <footer className="bg-[#f6f8f2] py-12 sm:pt-24">
+    <footer className="bg-[#f6f8f2] py-12 sm:pt-24 ">
       <RevealOnScroll>
       <div className="mx-auto max-w-6xl px-6 lg:px-8">
         <RevealOnScroll>
@@ -20,7 +20,7 @@ export default function Footer() {
 
         <nav
           aria-label="Footer"
-          className="mt-8 grid grid-cols-2 gap-6 sm:flex sm:justify-center sm:gap-8"
+          className="mt-8 grid sm:grid-cols-2 grid-cols-1 sm:gap-6 gap-4 sm:flex sm:justify-center sm:gap-8"
         >
           {["Services", "FAQ", "Why Trust Us", "Guidance"].map(
             (item) => (
