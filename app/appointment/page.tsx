@@ -33,13 +33,12 @@ export default function Page() {
     <>
       <Navbar />
       <main>
-        <section className="bg-[#f8f9fb] py-24">
+        <section className="bg-[#f8f9fb] py-24 ">
           <div className="max-w-3xl mx-auto px-4">
             <AppointmentRequestForm />
           </div>
         </section>
         <FaqImage/>
-        <PartnerCTA/>
         <Footer/>
       </main>
     </>

@@ -9,6 +9,7 @@ type HeroButton = {
 
 type HeroFullBackgroundProps = {
   backgroundImage: string;
+  ResponsiveImageBehavior?: string
   kicker?: string;
   titleBefore: string;
   highlight?: string; // optional highlighted word/phrase
@@ -16,10 +17,12 @@ type HeroFullBackgroundProps = {
   description?: string;
   primaryButton?: HeroButton;
   secondaryButton?: HeroButton;
+
 };
 
 export function HeroFullBackground({
   backgroundImage,
+  ResponsiveImageBehavior,
   kicker = "trusted dental clinic",
   titleBefore,
   highlight = "Great Smiles",
@@ -28,6 +31,11 @@ export function HeroFullBackground({
   primaryButton,
   secondaryButton,
 }: HeroFullBackgroundProps) {
+  const bgBehavior= 
+  ResponsiveImageBehavior??
+  "bg-contain bg-center bg-no-repeat md:bg-cover";
+
+
   const renderButton = (btn?: HeroButton) => {
     if (!btn) return null;
 
@@ -61,7 +69,7 @@ export function HeroFullBackground({
   return (
     <section className="relative h-screen">
       <div
-        className="h-full bg-cover bg-center bg-no-repeat flex items-center text-white pr-[5%] md:pr-[5%] md:pl-[5%] pl-[5%]"
+        className="relative h-full bg-center bg-cover bg-no-repeat  flex items-center text-white pr-[5%] md:pr-[5%] md:pl-[5%] pl-[5%]"
         style={{ backgroundImage: `url('${backgroundImage}')` }}
       >
         <div className="absolute inset-0 bg-black/60 z-10" />

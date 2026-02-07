@@ -35,7 +35,7 @@ export default function FaqImage() {
       <RevealOnScroll>
       <img
         className="max-w-lg w-full rounded-xl h-auto"
-        src="/Smilo-FAQ.png"
+        src="/Smilo-FAQ.webp"
         alt="FAQ illustration"
       />
       </RevealOnScroll>

@@ -30,7 +30,7 @@ const DEFAULT_POSTS: Post[] = [
       "Clear explanations of available treatments, who they’re suited for, and how to choose the option that best fits your needs.",
     href: "/blog/treatment-options",
     coverImageUrl:
-      "/Smilo-Blog1.jpg",
+      "/Smilo-Blog1.webp",
     coverImageAlt: "",
     authorName: "Darko Mitrev",
     authorHref: "https://mitrevdarko.dev/",
@@ -48,7 +48,7 @@ const DEFAULT_POSTS: Post[] = [
       "A step-by-step overview of your visit, including preparation, the procedure itself, and how we focus  comfort throughout.",
     href: "/blog/thejourney",
     coverImageUrl:
-      "/Smilo-Blog2.jpg",
+      "/Smilo-Blog2.webp",
     coverImageAlt: "",
     authorName: "Mike Tretyak",
     authorHref: "#!",
