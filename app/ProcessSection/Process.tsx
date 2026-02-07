@@ -62,7 +62,7 @@ export default function ProcessSteps() {
 
           {/* Step 2 */}
           <RevealOnScroll>
-          <div className="rounded-2xl  p-6 border border-foreground p-6  dark:bg-foreground">
+          <div className="rounded-2xl  p-6 border border-foreground p-6 bg-foreground">
             <RevealOnScroll>
             <div className="flex items-start gap-4">
 
